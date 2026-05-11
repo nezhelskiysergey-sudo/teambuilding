@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Описание проекта — Team Building 2026</title>
+    <style>
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Название проекта */
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #f8fafc;
+            line-height: 1.1;
+        }
+
+        /* Сетка для трех картинок */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Одна большая и две поменьше справа */
+            grid-template-rows: 250px 250px;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        /* Первая картинка (большая) */
+        .img-large {
+            grid-row: span 2;
+        }
+
+        /* Описание проекта */
+        .description {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+        }
+
+        /* Кнопка назад */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #6366f1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-10px);
+            color: #818cf8;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .img-large {
+                grid-row: span 1;
+            }
+            h1 { font-size: 2rem; }
+            .description { padding: 25px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Drift halle</h1>
+
+        <div class="image-gallery">
+            <img src="main-pic.jpg" alt="Главное фото" class="img-large">
+            <img src="side-pic1.jpg" alt="Дополнительное фото 1">
+            <img src="side-pic2.jpg" alt="Дополнительное фото 2">
+        </div>
+
+        <div class="description">
+            <p>
+                Тимбилдинг: Дрифт, Скорость и Драйв  
+            </p>
+            <p>
+                Пришло время сменить офисные кресла на сиденья дрифт-трайков. Нас ждет мощный выезд, где каждый сможет почувствовать себя королем заноса.
+            </p>
+            <p>
+                Что в программе:
+            </p>
+             <p>
+                •	Соревнования на drift trike: Пройдем путь от новичков до профи. В плане — инструктаж, тренировочные заезды, квалификация и полноценный турнир с профессиональным судейством.
+            </p>
+            <p>
+                •	Церемония награждения: Пьедестал, медали и почести для самых технических пилотов.
+            </p>
+            <p>
+                •	Главный бонус: Не один, а целых три победителя гонки получат заезд на Drift Taxi. Вы промчитесь на настоящей дрифт-BMW под управлением профи прямо по крытой трассе.
+            </p>
+            <p>
+                •	Зона отдыха: В нашем распоряжении просторный двор с террасами и грилем. Можно будет перекусить, обсудить заезды и просто хорошо провести время на свежем воздухе.
+            </p>
+            <p>
+                Питание и напитки:
+            </p>
+            <p>
+                Закуски и напитки можно брать с собой. На площадке есть всё необходимое для барбекю, если захотим что-то приготовить на углях, грили к нашим услугам.
+            </p>
+            <p>
+                Аренда площадки и организация программы: 400 евро в час + PVN.
+            </p>
+        </div>
+
+        <a href="../menu.html" class="back-link">← Вернуться к списку</a>
+    </div>
+
+</body>
+</html>

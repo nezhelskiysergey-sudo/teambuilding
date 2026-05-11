@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasākumu vitrīna — Team Building 2026</title>
+    <style>
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #f8fafc;
+        }
+
+        /* Režģis (Grid) */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Kartītes stils */
+        .card {
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            transition: 0.4s;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #6366f1;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: #334155;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .card:hover .card-image img {
+            scale: 1.1;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #f8fafc;
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+
+        .more-link {
+            margin-top: 15px;
+            display: inline-block;
+            color: #6366f1;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .back-btn {
+            margin-top: 50px;
+            text-decoration: none;
+            color: #94a3b8;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .back-btn:hover { color: #6366f1; }
+    </style>
+</head>
+<body>
+
+    <h1>Mūsu aktivitātes</h1>
+
+    <div class="showcase-grid">
+        
+        <a href="project1/project1.html" class="card">
+            <div class="card-image">
+                <img src="project1/main-pic.jpg" alt="Priekšskatījums 1">
+            </div>
+            <div class="card-content">
+                <h2>Drift halle</h2>
+                <p>Ir pienācis laiks nomainīt biroja krēslus pret drifta traiku sēdekļiem. Mūs gaida jaudīgs izbrauciens, kurā ikviens varēs justies kā sānslīdes karalis</p>
+                <span class="more-link">Lasīt vairāk →</span>
+            </div>
+        </a>
+
+        <a href="project2.html" class="card">
+            <div class="card-image">
+                <img src="thumb2.jpg" alt="Priekšskatījums 2">
+            </div>
+            <div class="card-content">
+                <h2>Šeit var būt jūsu piedāvājums</h2>
+                <p>Šeit var būt jūsu piedāvājums</p>
+                <span class="more-link">Lasīt vairāk →</span>
+            </div>
+        </a>
+
+        <a href="project3.html" class="card">
+            <div class="card-image">
+                <img src="thumb3.jpg" alt="Priekšskatījums 3">
+            </div>
+            <div class="card-content">
+                <h2>Šeit var būt jūsu piedāvājums</h2>
+                <p>Šeit var būt jūsu piedāvājums</p>
+                <span class="more-link">Lasīt vairāk →</span>
+            </div>
+        </a>
+
+    </div>
+
+    <a href="../index.html" class="back-btn">← Atpakaļ uz sākumu</a>
+
+</body>
+</html>

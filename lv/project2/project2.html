@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekta apraksts — Team Building 2026</title>
+    <style>
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Projekta nosaukums */
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #f8fafc;
+            line-height: 1.1;
+        }
+
+        /* Attēlu galerija */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr; 
+            grid-template-rows: 250px 250px;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        .img-large {
+            grid-row: span 2;
+        }
+
+        /* Apraksts */
+        .description {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+        }
+
+        /* Atpakaļ saite */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #6366f1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-10px);
+            color: #818cf8;
+        }
+
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .img-large {
+                grid-row: span 1;
+            }
+            h1 { font-size: 2rem; }
+            .description { padding: 25px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>VR arēna Another World (Jūrmala)</h1>
+
+        <div class="image-gallery">
+            <img src="main-pic.jpg" alt="Galvenais foto" class="img-large">
+            <img src="side-pic1.jpg" alt="Papildu foto 1">
+            <img src="side-pic2.jpg" alt="Papildu foto 2">
+        </div>
+
+        <div class="description">
+            <p>
+                01. Iegremdēšanās virtuālajā realitātē  
+            </p>
+            <p>
+               Iedomājieties datorspēli, kurā atrodaties iekšā. Jūs uzliekat vieglu ķiveri un nonākat virtuālajā pasaulē, kur varat brīvi staigāt ar savām kājām pa milzīgu, 400 $m^2$ lielu zāli. Šeit nav vadu vai mugursomu — jūs vienkārši pārvietojaties telpā, redzat savus kolēģus kā spēles tēlus un kopīgi izpildāt uzdevumus.
+            </p>
+            <p>
+                02. Komandas taktika un mijiedarbība
+            </p>
+             <p>
+                Spēļu scenāriji prasa saskaņotu visas grupas rīcību. Jums būs jāsadala lomas, jākoordinē pārvietošanās un jāpieņem ātri lēmumi reāllaikā, lai sasniegtu kopīgos mērķus.
+            </p>
+            <p>
+                03. Komforts un atpūtas zona
+            </p>
+            <p>
+               Pasākums paredzēts 5 stundām (divas sesijas pa 2,5 stundām pēc kārtas) brīvdienā. Kamēr viena grupa atrodas arēnā, pārējie atpūšas komfortablā atpūtas zonā, kur uz lieliem ekrāniem tiek translēts viss, ko spēlētāji redz savās ķiverēs.
+            </p>
+            <p>
+                04. Furšets un dzērieni
+            </p>
+            <p>
+                Visa pasākuma laikā tiks nodrošināta kvalitatīva ēdināšana. Tā kā apmaksa tiek veikta ar bezskaidras naudas norēķinu, budžets ir novirzīts premium ēdienkartei ar karstajām uzkodām un plašu dzērienu izvēli, nodrošinot augstu servisa līmeni visiem dalībniekiem.
+            </p>
+            <p>
+                05. Vienkārša organizēšana
+            </p>
+            <p>
+                Viss nepieciešamais aprīkojums ir iekļauts cenā.
+            </p>
+            <p>
+                Budžeta sadalījums (1600 €)
+            </p>
+            <p>
+                Arēnas īre (5 stundas / 5 briļļu pāri): 560 € (brīvdienu tarifs 280 € par 2.5 stundām × 2).<br>
+                Ēdināšana un dzērieni: 800 € (furšeta ēdienkarte un apkalpošana).<br>
+                Organizatoriskās rezerves / Merčs: 240 € (korporatīvie suvenīri vai centra papildpakalpojumi).<br>
+                <strong>KOPĀ: 1600 €.</strong>
+            </p>
+            
+        </div>
+
+        <a href="../menu.html" class="back-link">← Atpakaļ uz sarakstu</a>
+    </div>
+
+</body>
+</html>

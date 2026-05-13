@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Описание проекта — Team Building 2026</title>
+    <style>
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Название проекта */
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #f8fafc;
+            line-height: 1.1;
+        }
+
+        /* Сетка для трех картинок */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Одна большая и две поменьше справа */
+            grid-template-rows: 250px 250px;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        /* Первая картинка (большая) */
+        .img-large {
+            grid-row: span 2;
+        }
+
+        /* Описание проекта */
+        .description {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+
+        .description h2 {
+            color: #6366f1;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+        }
+
+        .description ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .description li {
+            margin-bottom: 10px;
+        }
+
+        /* Кнопка назад */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #6366f1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-10px);
+            color: #818cf8;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .img-large {
+                grid-row: span 1;
+            }
+            h1 { font-size: 2rem; }
+            .description { padding: 25px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Drift Experience / Motorsport Event</h1>
+
+        <div class="image-gallery">
+            <img src="main-pic.jpg" alt="Главное фото" class="img-large">
+            <img src="side-pic1.jpg" alt="Дополнительное фото 1">
+            <img src="side-pic2.jpg" alt="Дополнительное фото 2">
+        </div>
+
+        <div class="description">
+            <p>Предлагается организация эксклюзивного drift experience мероприятия для команды.</p>
+            
+            <h2>Что входит в программу:</h2>
+            <ul>
+                <li>2 профессионально подготовленных drift-автомобиля</li>
+                <li>2 опытных drift-пилота</li>
+                <li>tandem drift sessions (езды в тандеме)</li>
+                <li>10 полноценных заездов</li>
+            </ul>
+
+            <h2>Формат заездов</h2>
+            <p>Каждый заезд включает: 1–2 прогревочных круга и полноценный tandem drift run.</p>
+            <p>Одновременно в заезде участвуют: 2 автомобиля, 2 пилота и 2 пассажира. Продолжительность одного заезда: примерно 3–5 минут активного времени на трассе.</p>
+
+            <h2>Интерактивная часть мероприятия</h2>
+            <p>Помимо самих заездов, участники смогут погрузиться в атмосферу настоящего drift paddock и принять участие в различных активностях:</p>
+            <ul>
+                <li>замена покрышек</li>
+                <li>балансировка колес</li>
+                <li>замер времени круга</li>
+                <li>участие в судействе заездов</li>
+                <li>знакомство с технической подготовкой drift-car</li>
+            </ul>
+            <p>Это делает мероприятие не просто катанием, а полноценным immersive motorsport experience с вовлечением участников.</p>
+
+            <h2>Дополнительная возможность</h2>
+            <p>При гибкости по дате проведения мы можем подобрать день, когда на трассе будут проходить тренировки местных drift-спортсменов.</p>
+            <p>Это позволит гостям посмотреть тренировки других автомобилей, увидеть больше техники и прочувствовать атмосферу настоящего drift event. При этом гарантированная программа для гостей остается неизменной: 10 tandem-заездов.</p>
+        </div>
+
+        <a href="../menu.html" class="back-link">← Вернуться к списку</a>
+    </div>
+
+</body>
+</html>

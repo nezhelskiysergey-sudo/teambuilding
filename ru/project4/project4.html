@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Описание проекта — Team Building 2026</title>
+    <style>
+        body { 
+            background: #0f172a; 
+            color: white; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Название проекта */
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #f8fafc;
+            line-height: 1.1;
+        }
+
+        /* Сетка для трех картинок */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Одна большая и две поменьше справа */
+            grid-template-rows: 250px 250px;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        /* Первая картинка (большая) */
+        .img-large {
+            grid-row: span 2;
+        }
+
+        /* Описание проекта */
+        .description {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+        }
+
+        .description h2 {
+            color: #6366f1;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .description p {
+            margin-bottom: 20px;
+        }
+
+        .description ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .description li {
+            margin-bottom: 10px;
+        }
+
+        /* Кнопка назад */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #6366f1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-10px);
+            color: #818cf8;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .img-large {
+                grid-row: span 1;
+            }
+            h1 { font-size: 2rem; }
+            .description { padding: 25px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Онлайн мастер-класс «Приготовление макарунов»</h1>
+
+        <div class="image-gallery">
+            <img src="main-pic.jpg" alt="Главное фото" class="img-large">
+            <img src="side-pic1.jpg" alt="Дополнительное фото 1">
+            <img src="side-pic2.jpg" alt="Дополнительное фото 2">
+        </div>
+
+        <div class="description">
+            <p>Предлагаем для нашей команды необычный и уютный формат team building — online мастер-класс по приготовлению французских макарунов Premium 🍰</p>
+            <p>Это интерактивный формат, где участники не просто наблюдают, а вместе готовят десерт шаг за шагом под руководством кондитера. Такой формат отлично подходит для удалённых команд или гибридного коллектива.</p>
+            
+            <h2>Что входит:</h2>
+            <ul>
+                <li>Online мастер-класс в прямом эфире</li>
+                <li>Приготовление настоящих французских макарунов</li>
+                <li>Пошаговое сопровождение от кондитера</li>
+                <li>Совместное приготовление и общение в live формате</li>
+                <li>Лёгкая и неформальная атмосфера для команды</li>
+            </ul>
+
+            <h2>Формат отлично подходит для:</h2>
+            <ul>
+                <li>Team building мероприятий</li>
+                <li>Корпоративных online-встреч</li>
+                <li>Праздничных мероприятий для сотрудников</li>
+                <li>Совместного досуга команды</li>
+            </ul>
+
+            <h2>Дополнительно можно организовать:</h2>
+            <ul>
+                <li>Доставку ingredient box участникам</li>
+                <li>Брендирование мероприятия</li>
+                <li>Mini-конкурс на лучший результат</li>
+                <li>Online голосование и выбор победителей</li>
+                <li>Подарочные сертификаты для сотрудников</li>
+            </ul>
+
+            <p>Такой формат помогает команде расслабиться, пообщаться вне рабочих задач и провести время вместе в более живой и дружеской атмосфере 😊</p>
+            
+            <h2>Стоимость:</h2>
+            <p>Premium online обучение — 75 EUR за участника</p>
+        </div>
+
+        <a href="../menu.html" class="back-link">← Вернуться к списку</a>
+    </div>
+
+</body>
+</html>

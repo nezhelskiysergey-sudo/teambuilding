@@ -21,7 +21,7 @@
             width: 100%;
         }
 
-        /* Название проекта */
+        /* Projekta nosaukums */
         h1 {
             font-size: clamp(2.5rem, 6vw, 4rem);
             text-transform: uppercase;
@@ -32,10 +32,10 @@
             line-height: 1.1;
         }
 
-        /* Сетка для трех картинок */
+        /* Trīs attēlu režģis */
         .image-gallery {
             display: grid;
-            grid-template-columns: 2fr 1fr; /* Одна большая и две поменьше справа */
+            grid-template-columns: 2fr 1fr; /* Viens liels un divi mazāki labajā pusē */
             grid-template-rows: 250px 250px;
             gap: 20px;
             margin-bottom: 50px;
@@ -49,12 +49,12 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.4);
         }
 
-        /* Первая картинка (большая) */
+        /* Pirmais attēls (lielais) */
         .img-large {
             grid-row: span 2;
         }
 
-        /* Описание проекта */
+        /* Projekta apraksts */
         .description {
             background: #1e293b;
             padding: 40px;
@@ -85,7 +85,7 @@
             margin-bottom: 10px;
         }
 
-        /* Кнопка назад */
+        /* Atpakaļ poga */
         .back-link {
             display: inline-block;
             margin-top: 40px;
@@ -102,7 +102,7 @@
             color: #818cf8;
         }
 
-        /* Адаптивность для мобильных */
+        /* Adaptivitāte mobilajām ierīcēm */
         @media (max-width: 768px) {
             .image-gallery {
                 grid-template-columns: 1fr;
@@ -119,7 +119,7 @@
 <body>
 
     <div class="container">
-        <h1>Drift Experience / Autosporta pasākums</h1>
+        <h1>Drift Experience / Motorsport Event</h1>
 
         <div class="image-gallery">
             <img src="main-pic.jpg" alt="Galvenais foto" class="img-large">
@@ -134,32 +134,40 @@
             <ul>
                 <li>2 profesionāli sagatavotas drifta automašīnas</li>
                 <li>2 pieredzējuši drifta piloti</li>
-                <li>tandem drift sessions (tandēma braucieni)</li>
+                <li>tandem drift sessions (braucieni tandemā)</li>
                 <li>10 pilnvērtīgi braucieni</li>
             </ul>
 
             <h2>Braucienu formāts</h2>
             <p>Katrs brauciens ietver: 1–2 iesildīšanās apļus un pilnvērtīgu tandem drift run.</p>
-            <p>Braucienā vienlaicīgi piedalās: 2 automašīnas, 2 piloti un 2 pasažieri. Viena brauciena ilgums: aptuveni 3–5 minūtes aktīva laika trasē.</p>
+            <p>Vienlaicīgi braucienā piedalās: 2 automašīnas, 2 piloti un 2 pasažieri. Viena brauciena ilgums: aptuveni 3–5 minūtes aktīvā laika trasē.</p>
 
             <h2>Pasākuma interaktīvā daļa</h2>
-            <p>Papildus pašiem braucieniem dalībnieki varēs ienirt īstā drifta padoka atmosfērā un piedalīties dažādās aktivitātēs:</p>
+            <p>Papildus pašiem braucieniem dalībnieki varēs iejusties īsta drifta padoka atmosfērā un piedalīties dažādās aktivitātēs:</p>
             <ul>
                 <li>riepu maiņa</li>
                 <li>riteņu balansēšana</li>
                 <li>apļa laika mērīšana</li>
-                <li>dalība braucienu tiesāšanā</li>
+                <li>piedalīšanās braucienu tiesāšanā</li>
                 <li>iepazīšanās ar drifta automašīnas tehnisko sagatavošanu</li>
             </ul>
-            <p>Tas padara pasākumu nevis par vienkāršu vizināšanos, bet gan par pilnvērtīgu immersive motorsport experience ar dalībnieku iesaisti.</p>
+            <p>Tas padara pasākumu nevis vienkārši par vizināšanos, bet par pilnvērtīgu immersive motorsport experience ar dalībnieku iesaisti.</p>
 
             <h2>Papildu iespēja</h2>
-            <p>Esot elastīgiem attiecībā uz norises datumu, mēs varam piemeklēt dienu, kad trasē notiks vietējo drifta sportistu treniņi.</p>
+            <p>Ja ir elastība attiecībā uz norises datumu, mēs varam piemeklēt dienu, kad trasē norisināsies vietējo drifta sportistu treniņi.</p>
             <p>Tas ļaus viesiem vērot citu automašīnu treniņus, redzēt vairāk tehnikas un sajust īsta drifta pasākuma atmosfēru. Tajā pašā laikā garantētā programma viesiem paliek nemainīga: 10 tandēma braucieni.</p>
-        <h2>1500 eiro</h2>
+            
+            <h2>1500 eiro</h2>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed rgba(99, 102, 241, 0.3); color: #94a3b8; font-size: 1.1rem;">
+                <p style="margin-bottom: 10px; color: #6366f1; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Papildu informācija: Kā nokļūt</p>
+                <p><strong>Turp:</strong> Vilciens Rīga — Daugavpils atiet plkst. 07:55, pienākšana stacijā Kūkas plkst. 09:44. Tālāk kājām aptuveni 2.5 km (30 minūtes) uz dienvidiem cauri ciemam un pāri šosejai A12 tieši līdz trasei.</p>
+                <p><strong>Atpakaļ (Dienas vilciens):</strong> Kājām 2.5 km līdz stacijai Kūkas, atiešana plkst. 16:11, pienākšana Rīgā plkst. 18:00.</p>
+                <p style="margin-bottom: 0;"><strong>Atpakaļ (Vakara vilcieni):</strong> Ja uzkavējaties ilgāk, varat paņemt taksometru līdz Krustpils stacijai (Jēkabpils, ~15 km). No turienes uz Rīgu kursē vilcieni plkst. 18:59 (Rīgā plkst. 20:41) un plkst. 21:12 (Rīgā plkst. 22:55).</p>
+            </div>
         </div>
 
-        <a href="../menu.html" class="back-link">← Atgriezties sarakstā</a>
+        <a href="../menu.html" class="back-link">← Atgriezties pie saraksta</a>
     </div>
 
 </body>
